@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terreno 150m² à Venda | Praia Azul - Americana</title>
+
+<!-- Pixel da Meta -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'SEU_PIXEL_ID_AQUI');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/>
+</noscript>
+<!-- Fim Pixel -->
+
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f4f4f4;
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: 500px;
+margin: 30px auto;
+background: #ffffff;
+padding: 25px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+h1 {
+color: #2c3e50;
+text-align: center;
+}
+p {
+text-align: center;
+color: #555;
+}
+input, select, button {
+width: 100%;
+padding: 12px;
+margin-top: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 15px;
+}
+button {
+background: #27ae60;
+color: #fff;
+border: none;
+cursor: pointer;
+font-size: 16px;
+margin-top: 15px;
+}
+button:hover {
+background: #219150;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Terreno 150m² – Praia Azul</h1>
+<p>
+Jardim da Mata – Americana<br>
+Financie Terreno + Construção<br>
+Sem viela • Documentação regular
+</p>
+
+<form onsubmit="enviarLead(event)">
+<input type="text" name="nome" placeholder="Nome completo" required>
+<input type="text" name="endereco" placeholder="Endereço atual" required>
+<input type="tel" name="contato" placeholder="WhatsApp / Telefone" required>
+<input type="text" name="renda" placeholder="Renda bruta mensal" required>
+
+<select name="fgts" required>
+<option value="">Possui FGTS?</option>
+<option value="sim">Sim</option>
+<option value="nao">Não</option>
+</select>
+
+<button type="submit">Quero informações</button>
+</form>
+</div>
+
+<script>
+function enviarLead(event) {
+event.preventDefault();
+fbq('track', 'Lead');
+alert("Cadastro enviado! Em breve entraremos em contato.");
+}
+</script>
+
+</body>
+</html>
